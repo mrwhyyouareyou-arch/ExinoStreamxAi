@@ -39,7 +39,7 @@ query = st.text_input("", placeholder="Ask anything... (Search trends, news, or 
 if query:
     with st.spinner("Searching and Thinking..."):
         # STEP 1: Search (Tavily)
-        search_url = "https://tavily.com"
+         search_url = "https://tavily.com"
         payload = {"api_key": TAVILY_API_KEY, "query": query}
         search_res = requests.post(search_url, json=payload).json()
         
