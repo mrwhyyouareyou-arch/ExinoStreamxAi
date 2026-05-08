@@ -5,10 +5,13 @@ from groq import Groq
 
 # --- 1. APNI KEYS YAHAN BHARIYE ---
 # In quotes ke beech mein apni keys paste kar dein
-GROQ_API_KEY = "YAHAN_GROQ_KEY_PASTE_KAREIN"
-GEMINI_API_KEY = "YAHAN_GEMINI_KEY_PASTE_KAREIN"
-TAVILY_API_KEY = "YAHAN_TAVILY_KEY_PASTE_KAREIN"
-UNSPLASH_ACCESS_KEY = "YAHAN_UNSPLASH_TOKEN_PASTE_KAREIN"
+GROQ_API_KEY = import os
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GEMINI_API_KEY =AIzaSyCPqFNzUKtPpadCJNnGKlS8xB8tHTmbMuI
+TAVILY_API_KEY = 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
+‎
+UNSPLASH_ACCESS_KEY =redis-cli --tls -u redis://default:gQAAAAAAAca-AAIgcDIzMjU2MzY3ZDVjZDg0MjEzYjgxMGQ5ZjAxZTU4M2Y3Mw@pretty-rattler-116414.upstash.io:6379
+‎
 
 # Setup APIs
 client_groq = Groq(api_key=GROQ_API_KEY)
